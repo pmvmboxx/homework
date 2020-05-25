@@ -1,0 +1,125 @@
+object Form1: TForm1
+  Left = 293
+  Height = 442
+  Top = 319
+  Width = 611
+  Caption = 'Перекладач'
+  ClientHeight = 442
+  ClientWidth = 611
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.0.8.0'
+  object Memo1: TMemo
+    Left = 40
+    Height = 121
+    Top = 80
+    Width = 224
+    Lines.Strings = (
+      'перекладач'
+      'мова'
+      'речення'
+      'словосполучення'
+      'слово'
+      'літера'
+      'крапка'
+      ''
+      ''
+    )
+    OnChange = Memo1Change
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Memo2: TMemo
+    Left = 344
+    Height = 121
+    Top = 80
+    Width = 224
+    Lines.Strings = (
+      'translator'
+      'language'
+      'sentence'
+      'phrase'
+      'word'
+      'letter'
+      'period'
+    )
+    OnChange = Memo2Change
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 72
+    Height = 20
+    Top = 24
+    Width = 147
+    Caption = 'Український словник'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 384
+    Height = 20
+    Top = 24
+    Width = 147
+    Caption = 'Англійський словник'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 120
+    Height = 39
+    Top = 232
+    Width = 360
+    Caption = 'Заповнити масиви слів'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 200
+    Height = 39
+    Top = 293
+    Width = 214
+    Caption = 'Перекласти англійською'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 200
+    Height = 39
+    Top = 357
+    Width = 214
+    Caption = 'Перекласти українською'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Edit1: TEdit
+    Left = 32
+    Height = 28
+    Top = 296
+    Width = 132
+    TabOrder = 5
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Left = 456
+    Height = 28
+    Top = 293
+    Width = 128
+    TabOrder = 6
+    Text = 'Edit2'
+  end
+  object Edit3: TEdit
+    Left = 32
+    Height = 28
+    Top = 368
+    Width = 132
+    TabOrder = 7
+    Text = 'Edit3'
+  end
+  object Edit4: TEdit
+    Left = 456
+    Height = 28
+    Top = 376
+    Width = 128
+    TabOrder = 8
+    Text = 'Edit4'
+  end
+end
