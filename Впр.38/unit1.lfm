@@ -1,0 +1,64 @@
+object Form1: TForm1
+  Left = 327
+  Height = 393
+  Top = 176
+  Width = 272
+  Caption = 'Магічний квадрат-24'
+  ClientHeight = 393
+  ClientWidth = 272
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.0.8.0'
+  object StringGrid1: TStringGrid
+    Left = 37
+    Height = 200
+    Top = 56
+    Width = 202
+    Color = 16777115
+    ColCount = 3
+    DefaultColWidth = 64
+    DefaultRowHeight = 64
+    DoubleBuffered = False
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -40
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    RowCount = 3
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 32
+    Height = 31
+    Top = 8
+    Width = 214
+    Caption = 'Нова гра'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 37
+    Height = 27
+    Top = 336
+    Width = 99
+    Caption = 'Результат'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -20
+    Font.Name = 'Snap ITC'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button2: TButton
+    Left = 32
+    Height = 31
+    Top = 288
+    Width = 214
+    Caption = 'Перевірити'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+end

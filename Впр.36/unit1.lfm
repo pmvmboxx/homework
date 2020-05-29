@@ -1,0 +1,49 @@
+object Form1: TForm1
+  Left = 248
+  Height = 272
+  Top = 484
+  Width = 527
+  Caption = 'Сортування масиву'
+  ClientHeight = 272
+  ClientWidth = 527
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.0.8.0'
+  object StringGrid1: TStringGrid
+    Left = 16
+    Height = 61
+    Top = 32
+    Width = 488
+    ColCount = 6
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs, goAlwaysShowEditor, goSmoothScroll]
+    RowCount = 2
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 31
+    Top = 120
+    Width = 488
+    Caption = 'Ввести значення'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 16
+    Height = 31
+    Top = 168
+    Width = 488
+    Caption = 'Чи упорядкований масив?'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 176
+    Height = 20
+    Top = 224
+    Width = 44
+    Caption = 'Label1'
+    ParentColor = False
+  end
+end
